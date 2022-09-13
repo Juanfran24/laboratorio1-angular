@@ -34,6 +34,13 @@ export class RegistroComponent implements OnInit {
     this.productos = [];
   }
 
+  public validator(){ 
+    if(this.producto.nombre === '' || this.producto.precio === 0){
+      return alert('Datos invalidos');
+    }
+    this.registrar();
+  }
+
   ngOnInit(): void {
   }
 

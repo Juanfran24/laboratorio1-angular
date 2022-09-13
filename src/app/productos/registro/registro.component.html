@@ -1,20 +1,20 @@
 <section class="register-content">
   <article class="form-content">
     <form action="" class="form-register">
-      <label for="name">
+      <label for="name" class="label-form">
         Nombre:
-        <input required minlength="3" type="text" name="name" id="name" [(ngModel)]="producto.nombre" class="input-form" placeholder="Ej: Computador">
+        <input required type="text" name="name" id="name" [(ngModel)]="producto.nombre" class="input-form" placeholder="Ej: Computador">
       </label><br>
-      <label for="price">
+      <label for="price" class="label-form">
         Precio:
         <input required type="number" name="price" id="price" [(ngModel)]="producto.precio" class="input-form">
       </label><br>
-      <label for="stock">
+      <label for="stock" class="label-form">
         Stock:
         <input required type="number" name="stock" id="stock" [(ngModel)]="producto.stock" class="input-form">
       </label><br>
       <span class="button-label-content">
-        <button type="button" (click)="registrar()" class="button-styles">Registrar</button>
+        <button type="button" (click)="validator()" class="button-styles">Registrar</button>
         <label *ngIf="productos.length===0" class="label-warning">
           No hay productos registrados
         </label>
