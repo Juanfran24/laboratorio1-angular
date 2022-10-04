@@ -14,32 +14,10 @@
         <input required type="number" name="stock" id="stock" [(ngModel)]="producto.stock" class="input-form">
       </label><br>
       <span class="button-label-content">
-        <button type="button" (click)="validator()" class="button-styles">Registrar</button>
-        <label *ngIf="productos.length===0" class="label-warning">
-          No hay productos registrados
-        </label>
+        <button type="submit" (click)="validator()" class="button-styles">Registrar</button>
       </span>
     </form>
   </article>
-  <article class="table-content">
-    <table class="table-register">
-      <thead class="title-items">
-        <tr>
-          <th class="item-title">Nombre</th>
-          <th class="item-title">Precio</th>
-          <th class="item-title">Stock</th>
-          <th class="item-title">Estado</th>
-        </tr>
-      </thead>
-      <tbody class="rows-table">
-        <tr *ngFor="let producto of productos" class="row-table">
-          <td class="item-cell">{{producto.nombre}}</td>
-          <td class="item-cell">{{producto.precio}}</td>
-          <td class="item-cell">{{producto.stock}}</td>
-          <td class="item-cell">{{producto.estado===true&&'Disponible'}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <button *ngIf="productos.length!==0" type="button" (click)="vaciarArray()" class="button-styles">Limpiar productos</button>
-  </article>
+  <app-listado [productos]="productos" [formulario]="formActualizar"></app-listado>
+  <app-actualizar #formActualizar></app-actualizar>
 </section>

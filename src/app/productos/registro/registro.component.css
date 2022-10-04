@@ -37,12 +37,6 @@
   margin-top: 1rem;
 }
 
-.label-warning {
-  color: black;
-  font-size: 11px;
-  font-weight: 600;
-}
-
 .button-styles {
   padding: .5rem;
   border-radius: .5rem;
@@ -57,47 +51,6 @@
   background-color: #0000ff;
   outline: #1e90ff 2px solid;
   transition: .5s;
-}
-
-.table-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  border: 1px solid;
-  padding: 0 2rem;
-  border-radius: .4rem;
-  margin-left: 5%;
-}
-
-.table-register {
-  width: 100%;
-  margin-top: 1rem;
-  border-collapse: collapse;
-  border: 1px solid #ccc;
-  background-color: #f2f2f2;
-  margin-bottom: 1.5rem;
-}
-
-.title-items {
-  color: rgb(97, 95, 95);
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.row-table {
-  color: black;
-  font-size: 12px;
-  border: 1px solid #ccc;
-  padding: 1rem;
-}
-
-.item-title{
-  padding: .5rem;
-}
-
-.item-cell {
-  padding: .5rem;
 }
 
 .label-form {

@@ -1,1 +1,29 @@
-<p>listado works!</p>
+<article class="table-content">
+  <label *ngIf="productos.length===0" class="label-warning">
+    No hay productos registrados
+  </label>
+  <table class="table-register">
+    <thead class="title-items">
+      <tr>
+        <th class="item-title">Nombre</th>
+        <th class="item-title">Precio</th>
+        <th class="item-title">Stock</th>
+        <th class="item-title">Estado</th>
+        <th class="item-title">Acciones</th>
+      </tr>
+    </thead>
+    <tbody class="rows-table">
+      <tr *ngFor="let producto of productos" class="row-table">
+        <td class="item-cell">{{producto.nombre}}</td>
+        <td class="item-cell">{{producto.precio}}</td>
+        <td class="item-cell">{{producto.stock}}</td>
+        <td class="item-cell">{{producto.estado == 1 && 'Disponible'}}</td>
+        <td class="item-cell">
+          <button class="button-delete" (click)="eliminarProducto(producto.id)">Eliminar</button>
+          <button class="button-update" (click)="abrirFormulario(producto)">Actualizar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button *ngIf="productos.length!==0" type="button" class="button-styles" disabled>Limpiar productos</button>
+</article>

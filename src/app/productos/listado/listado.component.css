@@ -1,0 +1,84 @@
+.label-warning {
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.table-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border: 1px solid;
+  padding: 0 2rem;
+  border-radius: .4rem;
+  margin-left: 5%;
+}
+
+.table-register {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  margin-bottom: 1.5rem;
+}
+
+.title-items {
+  color: rgb(97, 95, 95);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.row-table {
+  color: black;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.item-title{
+  padding: .5rem;
+}
+
+.item-cell {
+  padding: .5rem;
+}
+
+.button-delete {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-delete:hover {
+  background-color: #bc1e12;
+  transition: .2s;
+}
+
+.button-update {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-update:hover {
+  background-color: #3b7d2a;
+  transition: .2s;
+}
